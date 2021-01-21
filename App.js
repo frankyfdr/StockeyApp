@@ -1,16 +1,35 @@
+import 'react-native-gesture-handler';
 import * as React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import Header from "./src/components/Header/Header";
+
+import Login from "./src/components/Login/Login.js";
+
+import {MyDrawer} from "./src/screens/Drawer.js"
+
 
 export default function App() {
+
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
+
+
+  <NavigationContainer  >
+      <MyDrawer />
+  </NavigationContainer>
+    
+
   );
 }
+/*
+    <View style={styles.View}>
+      <NavigationContainer style={styles.Drawer}>
+        <Drawer.Navigator >
+          <Drawer.Screen style={styles.Screen} name="login" component={Login} />
+        </Drawer.Navigator>
+      </NavigationContainer>
+        <Header/>
+        <Main/>
+    </View>
+    */
