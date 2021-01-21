@@ -8,7 +8,7 @@ export default function App() {
  
   return (
     <View style={styles.View}>
-       <Text style={{color:"pink"}} >Login here</Text>
+       <Text style={{color:"pink"}} > screen Login here</Text>
     </View>
   );
 }

@@ -4,9 +4,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import Header from "./src/components/Header/Header";
-
 import Login from "./src/components/Login/Login.js";
-
 import {MyDrawer} from "./src/screens/Drawer.js"
 
 
