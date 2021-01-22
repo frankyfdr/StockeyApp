@@ -6,14 +6,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import Header from "./src/components/Header/Header";
 import Login from "./src/components/Login/Login.js";
 import {MyDrawer} from "./src/screens/Drawer.js"
-
+import DrawerContent from "./src/screens/DrawerContent.js"
 
 export default function App() {
 
   return (
 
 
-  <NavigationContainer  >
+  <NavigationContainer   >
       <MyDrawer />
   </NavigationContainer>
     

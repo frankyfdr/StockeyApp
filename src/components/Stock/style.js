@@ -1,6 +1,7 @@
 import {StyleSheet,Platform} from 'react-native'
 
 const width = 60;
+const fontSize = 13;
 export default StyleSheet.create({
 
 
@@ -19,20 +20,20 @@ export default StyleSheet.create({
 "StockText":{
     color: "white",
     margin:"3%",
-    fontSize:13,
+    fontSize:fontSize,
     width: width,
     
 },
 "StockTextG":{
     color: "green",
     margin:"3%",
-    fontSize:11,
+    fontSize:fontSize,
     width: width,
 },
 "StockTextR":{
     color: "red",
     margin:"3%",
-    fontSize:11,
+    fontSize:fontSize,
     width: width,
 },
 "cicleR":{

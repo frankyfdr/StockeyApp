@@ -12,9 +12,9 @@ export default function App() {
     return( 
     
     <View style={styles.View}>
-        <Header/>
+        
         <Home/>
-        <Menu/>
+        
     </View>
         
     )

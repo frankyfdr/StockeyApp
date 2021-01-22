@@ -5,7 +5,8 @@ export default StyleSheet.create({
   "View":{
       height:"100%",
       flex:1,
-      position:"absolute"
+      marginTop:"8%",
+      backgroundColor:"black"
   }
 
     

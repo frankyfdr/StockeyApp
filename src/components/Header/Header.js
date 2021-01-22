@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "./style.js"
 import { View, Text, Image,TouchableOpacity} from "react-native";
 
-export default function App() {
+export default function App({ navigation }) {
   
    const click = () =>{
     alert()
@@ -11,7 +11,7 @@ export default function App() {
     return( 
     
     <View style={styles.View}>
-        <TouchableOpacity  style={styles.HamMenu}>
+        <TouchableOpacity  style={styles.HamMenu} onPress={() => navigation.openDrawer()}>
             <View style={styles.HamMenuRow}></View>
             <View style={styles.HamMenuRow}></View>
             <View style={styles.HamMenuRow}></View>
