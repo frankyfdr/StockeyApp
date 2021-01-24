@@ -29,9 +29,11 @@ export default StyleSheet.create({
             backgroundColor:"white"
         },
         "bottomDrawerSection":{
-            marginBottom: 15,
+            position:"relative",
+            marginBottom: 10,
             borderTopColor: '#f4f4f4',
-            borderTopWidth: 1
+            borderTopWidth: 1,
+            backgroundColor:"pink"
         },
         "TopDrawerSection":{
             marginTop: 15,
