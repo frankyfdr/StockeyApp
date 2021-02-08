@@ -7,8 +7,17 @@ import {
     DrawerItem
 } from '@react-navigation/drawer';
 
+import {Nav}  from "../Context.js"
+
+
 export default function DrawerContent(props) {
+
+    let ola ="ola"
+
+
   return (
+  <Nav.Provider value={{ola}}>
+
     <View style={styles.Main}>
        
             <View style={styles.HeaderTop}>
@@ -34,5 +43,7 @@ export default function DrawerContent(props) {
                 />
             </Drawer.Section>
    </View>
+  </Nav.Provider>
+
   );
 }

@@ -18,7 +18,7 @@ export default StyleSheet.create({
         },
         "HeaderTop":{
             marginTop:"-11%",
-            backgroundColor:"pink"
+          
          },
          "Main":{
             flex:1,

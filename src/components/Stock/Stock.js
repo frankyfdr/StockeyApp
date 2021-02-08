@@ -12,8 +12,6 @@ export default function App(props) {
 
     if(props.symInfo.props.render === true)
     {
-        console.log(info.symbol,"-",info.marketState)
-   //console.log(info.symbol,"-",info.triggerable)
  
     let cor ="";
     let market;

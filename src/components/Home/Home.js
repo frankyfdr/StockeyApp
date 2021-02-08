@@ -5,17 +5,22 @@ import axios from "axios"
 import Stock from "../Stock/Stock.js"
 import { Thread } from 'react-native-threads';
 import { View,SafeAreaView, FlatList,Text,ScrollView, Image,TouchableOpacity} from "react-native";
-
+import {Context} from "../../Context.js"
+import { useContext } from "react";
 export default function App() {
-    
+  const ctx = useContext(Context)
     const [topLose, setTopLose] = useState("");
     const [topWin, setTopWin] = useState("");
+    const [refresh, setRefreh] = useState();
 
 
     useEffect(()=>{
-      //setInterval(()=>ola(),2000)
-      ola()
-    },[])
+
+      clearInterval(refresh)
+      setRefreh(setInterval(()=>ola(),2000))
+     
+     //ola()
+    },[ctx.symList])
 
     const  OrderByAsc = (winner, loser) => {
       let sup;
@@ -72,7 +77,7 @@ export default function App() {
    const ola = async  () =>{
 
 
-     await axios.get("https://api.stockey.tk/info/axp,amzn,aapl,ma,byg.l,nflx,ads.de,nke,LLOY.l,^FTSE")
+     await axios.get("https://api.stockey.tk/info/"+ctx.symList)
        .then((response) =>{
          
            response = response.data.quoteResponse.result

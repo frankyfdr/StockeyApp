@@ -5,13 +5,13 @@ export default StyleSheet.create({
 
 "topwinner":{
     width: "100%",
-    height: "50%",
+    height: "45%",
     
     
 },
 "toplooser":{
     width: "100%",
-    height: "100%",
+    height: "45%",
    
     
 },
